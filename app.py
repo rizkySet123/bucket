@@ -13,7 +13,7 @@ DB_NAME = os.environ.get("dbsparta")
 client = MongoClient('mongodb+srv://rizky:rizky123setiawan@cluster0.ed4ndng.mongodb.net/?retryWrites=true&w=majority')
 db = client.dbsparta
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
 
 @app.route('/')
 def home():
